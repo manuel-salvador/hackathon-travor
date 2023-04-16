@@ -1,4 +1,3 @@
-import ConnectButton from "@/components/ConnectButton";
 import MapView from "@/components/MapView";
 import SearchBar from "@/components/SearchBar";
 

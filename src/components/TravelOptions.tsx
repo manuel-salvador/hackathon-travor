@@ -3,9 +3,7 @@ import Link from "next/link";
 
 import { ClockIcon, UserBorderedIcon } from "./Icons";
 
-type Props = {};
-
-export default function TravelOptions({}: Props) {
+export default function TravelOptions() {
   return (
     <div className="flex flex-col gap-4">
       {options.map((option, index) => (
@@ -36,7 +34,10 @@ export default function TravelOptions({}: Props) {
           <p className="text-xl">${option.price}</p>
         </div>
       ))}
-      <Link href="/" className="bg-dark text-white text-center py-4 rounded-lg">
+      <Link
+        href="/esperando-viaje"
+        className="bg-dark text-white text-center py-4 rounded-lg"
+      >
         Confirmar viaje
       </Link>
     </div>
